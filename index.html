@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <title>Folha de Runeterra</title>
     </head>
     <body>
-        <header>
-            <nav>
+        <header id="head">
+            <nav class="navbar">
                 <h1>
                     Folha de Runeterra
                 </h1>
@@ -18,8 +19,8 @@
                 </ul>
             </nav>
         </header>
-        <div class="container">
-            <section>
+        <div class="container" id="container">
+            <section class="intro">
                 <article>
                     <h2>Sobre a Folha de Runeterra</h2>
                     <p>
@@ -35,17 +36,17 @@
                     </p>
                 </article>
             </section>
-            <section>
-                <article>
-                    <h2>Últimas Notícias</h2>
-                    <p>
-                        Fique por dentro das últimas notícias sobre o universo de Runeterra, incluindo atualizações de jogos, 
-                        eventos especiais, lançamentos de campeões e muito mais. 
-                        Acompanhe as novidades e não perca nenhum detalhe do que está acontecendo no mundo de League of Legends.
-                    </p>
-                </article>
-                <main>
-                    <article>
+            <section class="content" id="content">
+                <main class="main-content">
+                    <article class="news" id="content-header">
+                        <h2>Últimas Notícias</h2>
+                        <p>
+                            Fique por dentro das últimas notícias sobre o universo de Runeterra, incluindo atualizações de jogos, 
+                            eventos especiais, lançamentos de campeões e muito mais. 
+                            Acompanhe as novidades e não perca nenhum detalhe do que está acontecendo no mundo de League of Legends.
+                        </p>
+                    </article>
+                    <article class="post">
                         <h3>Nova Atualização de Runeterra Anunciada</h3>
                         <figure>
                             <img src="assets/img1.webp" alt="Nova Atualização de Runeterra">
@@ -58,7 +59,7 @@
                             com novas estratégias e desafios.
                         </p>
                     </article>
-                    <article>
+                    <article class="post">
                         <h3>Evento Especial de Runeterra Chegando</h3>
                         <figure>
                             <img src="assets/img2.webp" alt="Evento Especial de Runeterra">
@@ -70,7 +71,7 @@
                             Fique atento para não perder essa oportunidade única de mergulhar ainda mais no universo de Runeterra.
                         </p>
                     </article>
-                    <article>
+                    <article class="post">
                         <h3>Novos Campeões de Runeterra Revelados</h3>
                         <figure>
                             <img src="assets/img3.webp" alt="Novos Campeões de Runeterra">
@@ -84,38 +85,39 @@
                         </p>
                     </article>
                 </main>
-            </section>
-            <section>
-                <aside>
-                    <section>
-                        <h4>Buscas</h4>
-                        <form>
-                            <input type="text" placeholder="Pesquisar...">
-                            <button type="submit">Buscar</button>
-                    </section>
-                    <section>
-                        <h4>Categorias</h4>
-                        <ul>
-                            <li><a href="#">Campeões</a></li>
-                            <li><a href="#">Regiões</a></li>
-                            <li><a href="#">Histórias</a></li>
-                            <li><a href="#">Eventos</a></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>Tags</h4>
-                        <ul>
-                            <li><a href="#">Atualizações</a></li>
-                            <li><a href="#">Eventos</a></li>
-                            <li><a href="#">Campeões</a></li>
-                            <li><a href="#">Lore</a></li>
-                            <li><a href="#">Novidades</a></li>
-                            <li><a href="#">Dicas</a></li>
-                            <li><a href="#">Comunidade</a></li>
-                            <li><a href="#">Curiosidades</a></li>
-                        </ul>
-                    </section>
-                </aside>
+                <section class="sidebar">
+                    <aside class="sidebar-content">
+                        <section class="search">
+                            <form>
+                                <h4>Buscas</h4>
+                                <input type="text" placeholder="Pesquisar...">
+                                <button type="submit">Buscar</button>
+                            </form>
+                        </section>
+                        <section class="categories">
+                            <h4>Categorias</h4>
+                            <ul>
+                                <li><a href="#">Campeões</a></li>
+                                <li><a href="#">Regiões</a></li>
+                                <li><a href="#">Histórias</a></li>
+                                <li><a href="#">Eventos</a></li>
+                            </ul>
+                        </section>
+                        <section class="tags">
+                            <h4>Tags</h4>
+                            <ul>
+                                <li><a href="#">Atualizações</a></li>
+                                <li><a href="#">Eventos</a></li>
+                                <li><a href="#">Campeões</a></li>
+                                <li><a href="#">Lore</a></li>
+                                <li><a href="#">Novidades</a></li>
+                                <li><a href="#">Dicas</a></li>
+                                <li><a href="#">Comunidade</a></li>
+                                <li><a href="#">Curiosidades</a></li>
+                            </ul>
+                        </section>
+                    </aside>
+                </section>
             </section>
         </div>
         <footer>
